@@ -39,7 +39,7 @@ module Middleman
         ::Slim::Engine.set_options(
           buffer: '@_out_buf',
           use_html_safe: true,
-          generator: ::Temple::Generators::RailsOutputBuffer,
+          generator: ::Temple::Generators::StringBuffer,
           disable_escape: true
         )
       end
