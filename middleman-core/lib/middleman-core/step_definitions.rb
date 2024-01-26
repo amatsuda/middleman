@@ -13,6 +13,10 @@ module ArubaMonkeypatch
       cmd.sub(/^ruby(?= )/, current_ruby)
     end
   end
+
+  def page
+    Capybara.current_session
+  end
 end
 World(ArubaMonkeypatch)
 
